@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aymen EL FADILI - Développeur Web Junior</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-logo">aymen.dev</span>
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div style="display:flex; align-items:center; gap:0.8rem;">
+        <button class="toggle-btn" id="darkToggle">🌙 Dark</button>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#accueil" class="mobile-link">Accueil</a>
+      <a href="#apropos" class="mobile-link">À propos</a>
+      <a href="#competences" class="mobile-link">Compétences</a>
+      <a href="#projets" class="mobile-link">Projets</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="accueil">
+    <div class="hero-content fade-in">
+      <div class="hero-text">
+        <p class="hero-greeting">// Bonjour, je suis</p>
+        <h1 class="hero-name">Aymen EL FADILI</h1>
+        <p class="hero-title">Développeur Web Junior 🚀</p>
+        <p class="hero-desc">
+          Passionné par le développement web, je crée des applications avec Java, Spring Boot et React.
+          J'aime le code propre, apprendre de nouvelles choses et travailler en équipe.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projets" class="btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn-outline">Me contacter</a>
+        </div>
+      </div>
+      <div class="hero-avatar">🧑‍💻</div>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="apropos">
+    <h2 class="section-title"><span>#</span> À propos</h2>
+    <div class="about-grid fade-in">
+      <div class="about-card">
+        <h3>👤 Qui suis-je ?</h3>
+        <p>
+          Je m'appelle Aymen, développeur web junior basé au Maroc.
+          Diplômé en développement digital, je suis passionné par la création d'applications
+          qui ont un vrai impact. J'aime apprendre continuellement et chercher des solutions propres à des problèmes complexes.
+        </p>
+      </div>
+      <div class="about-card">
+        <h3>🎓 Formation</h3>
+        <ul>
+          <li>Développeur Web Junior — ENAA (2025 - présent)</li>
+          <li>TS Développement Digital Full-Stack — ISTA OFPPT (2023 - 2025)</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <h3>🎯 Objectifs</h3>
+        <p>
+          Je cherche une opportunité en tant que développeur junior pour contribuer
+          à des projets innovants, continuer à progresser et évoluer au sein d'une équipe motivée.
+        </p>
+      </div>
+      <div class="about-card">
+        <h3>🌍 Langues</h3>
+        <ul>
+          <li>Arabe — Natif</li>
+          <li>Français — Intermédiaire</li>
+          <li>Anglais — Intermédiaire</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="competences">
+    <h2 class="section-title"><span>#</span> Compétences</h2>
+    <div class="skills-groups fade-in">
+
+      <div class="skill-group">
+        <h3>Technologies</h3>
+        <div class="badges">
+          <span class="badge">Java</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">HTML5</span>
+          <span class="badge">CSS3</span>
+          <span class="badge">React</span>
+          <span class="badge">Spring Boot</span>
+          <span class="badge">Spring Security</span>
+          <span class="badge">Spring Data JPA</span>
+          <span class="badge">MySQL</span>
+          <span class="badge">Docker</span>
+          <span class="badge">Git</span>
+          <span class="badge">Postman</span>
+          <span class="badge">Swagger</span>
+          <span class="badge">JUnit 5</span>
+          <span class="badge">Mockito</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Niveau par technologie</h3>
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Java / Spring Boot</span><span>80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>HTML / CSS</span><span>85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>JavaScript</span><span>70%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>React</span><span>60%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Docker</span><span>55%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="55"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Méthodes de travail</h3>
+        <div class="badges">
+          <span class="badge">Agile / Scrum</span>
+          <span class="badge">Travail en équipe</span>
+          <span class="badge">Gestion de projet</span>
+          <span class="badge">Architecture MVC</span>
+          <span class="badge">REST API</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets">
+    <h2 class="section-title"><span>#</span> Projets</h2>
+
+    <div class="filter-btns">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="backend">Backend</button>
+      <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card fade-in" data-category="backend">
+        <div class="project-icon">🏥</div>
+        <h3>HealthCare API</h3>
+        <p>Système de gestion médicale complet avec suivi des patients, rendez-vous et dossiers médicaux. Architecture MVC avec DTO et tests unitaires.</p>
+        <div class="project-techs">
+          <span class="tech-tag">Spring Boot</span>
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">JUnit</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Swagger</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/aymenelfadili" target="_blank">⟨/⟩ GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-in" data-category="backend">
+        <div class="project-icon">🚚</div>
+        <h3>FleetFlow</h3>
+        <p>API REST de gestion logistique pour le suivi des livraisons. Versionnement de base de données avec Flyway et déploiement Docker Compose.</p>
+        <div class="project-techs">
+          <span class="tech-tag">Spring Boot</span>
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">Flyway</span>
+          <span class="tech-tag">Docker Compose</span>
+          <span class="tech-tag">JUnit 5</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/aymenelfadili" target="_blank">⟨/⟩ GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-in" data-category="fullstack">
+        <div class="project-icon">🌐</div>
+        <h3>Portfolio Personnel</h3>
+        <p>Ce portfolio ! Conçu avec HTML, CSS et JavaScript Vanilla. Responsive design, dark mode et animations CSS.</p>
+        <div class="project-techs">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/aymenelfadili" target="_blank">⟨/⟩ GitHub</a>
+          <a href="#" target="_blank">🔗 Démo</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title"><span>#</span> Contact</h2>
+    <div class="contact-wrapper fade-in">
+
+      <div class="contact-info">
+        <h3>Parlons ensemble 👋</h3>
+        <p>Je suis ouvert aux opportunités junior et aux collaborations. N'hésitez pas à me contacter !</p>
+        <div class="contact-detail">
+          <span>📱</span>
+          <span>+212 625514303</span>
+        </div>
+        <div class="contact-detail">
+          <span>📍</span>
+          <span>Maroc</span>
+        </div>
+        <div class="contact-detail">
+          <span>💼</span>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+        <div class="contact-detail">
+          <span>🐙</span>
+          <a href="https://github.com/aymenelfadili" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" placeholder="Votre nom" />
+          <span class="error-msg" id="nameError">Veuillez entrer votre nom.</span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="votre@email.com" />
+          <span class="error-msg" id="emailError">Veuillez entrer un email valide.</span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Votre message..."></textarea>
+          <span class="error-msg" id="messageError">Le message doit faire au moins 10 caractères.</span>
+        </div>
+        <button type="submit" class="submit-btn">Envoyer le message ✉️</button>
+        <div class="success-msg" id="successMsg">
+          ✅ Message envoyé ! Je vous répondrai bientôt.
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Fait avec ❤️ par <strong>Aymen EL FADILI</strong> — 2025</p>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" title="Retour en haut">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
