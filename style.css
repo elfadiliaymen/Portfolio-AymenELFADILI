@@ -1,5 +1,4 @@
-/* ===== VARIABLES ===== */
-/* palette: #37353E  #44444E  #715A5A  #D3DAD9 */
+
 :root {
   --bg: #37353E;
   --bg2: #2e2c35;
@@ -24,7 +23,7 @@
   --muted: #715A5A;
 }
 
-/* ===== RESET ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -52,7 +51,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ===== NAVBAR ===== */
+
 nav {
   position: fixed;
   top: 0;
@@ -97,7 +96,7 @@ nav {
   text-decoration: none;
 }
 
-/* hamburger */
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -120,7 +119,7 @@ nav {
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* dark mode toggle */
+
 .toggle-btn {
   background: var(--card);
   border: 1px solid var(--border);
@@ -136,7 +135,7 @@ nav {
   background: var(--border);
 }
 
-/* mobile menu */
+
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -155,7 +154,7 @@ nav {
   font-size: 1rem;
 }
 
-/* ===== SECTIONS ===== */
+
 section {
   padding: 5rem 1.5rem;
   max-width: 1000px;
@@ -178,7 +177,7 @@ section {
   font-weight: 400;
 }
 
-/* ===== HERO ===== */
+
 #accueil {
   min-height: 100vh;
   display: flex;
@@ -262,7 +261,7 @@ section {
   text-decoration: none;
 }
 
-/* avatar */
+
 .hero-avatar {
   width: 200px;
   height: 200px;
@@ -286,7 +285,7 @@ section {
   opacity: 0.3;
 }
 
-/* ===== À PROPOS ===== */
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -325,7 +324,7 @@ section {
   color: var(--accent);
 }
 
-/* ===== COMPÉTENCES ===== */
+
 .skills-groups {
   display: flex;
   flex-direction: column;
@@ -362,7 +361,7 @@ section {
   transform: translateY(-2px);
 }
 
-/* progress bars */
+
 .skill-bars {
   display: flex;
   flex-direction: column;
@@ -400,7 +399,7 @@ section {
   transition: width 1s ease;
 }
 
-/* ===== PROJETS ===== */
+
 .filter-btns {
   display: flex;
   gap: 0.6rem;
@@ -535,7 +534,7 @@ section {
   font-size: 1.1rem;
 }
 
-/* form */
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -622,7 +621,7 @@ section {
   display: block;
 }
 
-/* ===== FOOTER ===== */
+
 footer {
   text-align: center;
   padding: 2rem 1.5rem;
@@ -631,7 +630,7 @@ footer {
   font-size: 0.85rem;
 }
 
-/* ===== BACK TO TOP ===== */
+
 #back-to-top {
   position: fixed;
   bottom: 1.5rem;
@@ -655,7 +654,7 @@ footer {
   pointer-events: all;
 }
 
-/* ===== ANIMATIONS ===== */
+
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -667,7 +666,7 @@ footer {
   transform: translateY(0);
 }
 
-/* ===== RESPONSIVE ===== */
+
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }

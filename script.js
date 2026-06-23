@@ -1,4 +1,4 @@
-// ===== DARK MODE =====
+
 const toggleBtn = document.getElementById('darkToggle')
 const body = document.body
 let isDark = true
@@ -7,14 +7,14 @@ toggleBtn.addEventListener('click', () => {
   isDark = !isDark
   if (isDark) {
     body.classList.remove('light')
-    toggleBtn.textContent = '🌙 Dark'
+    toggleBtn.textContent = 'Dark'
   } else {
     body.classList.add('light')
-    toggleBtn.textContent = '☀️ Light'
+    toggleBtn.textContent = 'Light'
   }
 })
 
-// ===== HAMBURGER MENU =====
+
 const hamburger = document.getElementById('hamburgerBtn')
 const mobileMenu = document.getElementById('mobileMenu')
 
@@ -23,7 +23,7 @@ hamburger.addEventListener('click', () => {
   mobileMenu.classList.toggle('open')
 })
 
-// close menu when a link is clicked
+
 document.querySelectorAll('.mobile-link').forEach(link => {
   link.addEventListener('click', () => {
     hamburger.classList.remove('open')
@@ -31,7 +31,7 @@ document.querySelectorAll('.mobile-link').forEach(link => {
   })
 })
 
-// ===== BACK TO TOP =====
+
 const backBtn = document.getElementById('back-to-top')
 
 window.addEventListener('scroll', () => {
@@ -46,7 +46,7 @@ backBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
 })
 
-// ===== FADE IN ON SCROLL =====
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -58,7 +58,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el))
 
-// ===== SKILL BARS ANIMATION =====
+
 const barObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -74,7 +74,6 @@ const barObserver = new IntersectionObserver((entries) => {
 const barsSection = document.querySelector('.skill-bars')
 if (barsSection) barObserver.observe(barsSection)
 
-// ===== PROJECT FILTER =====
 const filterBtns = document.querySelectorAll('.filter-btn')
 const projectCards = document.querySelectorAll('.project-card')
 
@@ -96,7 +95,7 @@ filterBtns.forEach(btn => {
   })
 })
 
-// ===== FORM VALIDATION =====
+
 const form = document.getElementById('contactForm')
 
 function showError(fieldId, errorId) {
@@ -109,7 +108,7 @@ function clearError(fieldId, errorId) {
   document.getElementById(errorId).classList.remove('show')
 }
 
-// clear errors on input
+
 document.getElementById('name').addEventListener('input', () => clearError('name', 'nameError'))
 document.getElementById('email').addEventListener('input', () => clearError('email', 'emailError'))
 document.getElementById('message').addEventListener('input', () => clearError('message', 'messageError'))
@@ -117,9 +116,13 @@ document.getElementById('message').addEventListener('input', () => clearError('m
 form.addEventListener('submit', (e) => {
   e.preventDefault()
 
-  const name = document.getElementById('name').value.trim()
-  const email = document.getElementById('email').value.trim()
+  const name = document.getElementById('name').value.trim();
   const message = document.getElementById('message').value.trim()
+  if(name.length > 4){
+     message.InnerText("name pas valide");
+  }
+  const email = document.getElementById('email').value.trim()
+  
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
   let valid = true
